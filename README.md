@@ -1,6 +1,6 @@
-# ✿ Blushed — Skincare Search & Recommendation System
+# ✿ Blushed : Skincare Search & Recommendation System
+A small search engine and recommender for cosmetic products
 
-A small search engine and recommender for cosmetic products, built for **Exercise 2: Query Expansion**.
 Dataset: [`Yaminii/skincare1`](https://huggingface.co/datasets/Yaminii/skincare1) (only products that have a picture are shown).
 
 ## Features
@@ -41,14 +41,7 @@ templates/index.html
 data/skincare1.csv      (created on first run)
 ```
 
-## Deploy on Render (free)
-1. Run the app locally once so `data/skincare1.csv` exists, then commit it to GitHub.
-2. On https://render.com create an account and click **New → Web Service**, then connect this GitHub repository.
-3. Settings: **Runtime** Python 3 · **Build command** `pip install -r requirements.txt` · **Start command** `gunicorn app:app --workers 1 --timeout 120` · **Instance type** Free.
-4. Click **Create Web Service**. After the build you get a link like `https://your-app.onrender.com`.
 
-Note: the free instance sleeps after 15 minutes without visitors; the first request afterwards takes about a minute.
-If the app runs out of memory (512 MB on the free tier), add the environment variable `MAX_ROWS=3000`.
 
 ## API
 | Route | Description |
