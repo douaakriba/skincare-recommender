@@ -42,7 +42,6 @@ data/skincare1.csv      (created on first run)
 ```
 
 
-
 ## API
 | Route | Description |
 |---|---|
@@ -51,3 +50,12 @@ data/skincare1.csv      (created on first run)
 | `POST /api/recommend` | `{skin_type, concern, query}` |
 | `POST /api/feedback` | `{query, product_ids, feedback: "relevant"\|"irrelevant"}` |
 | `GET /api/meta` | Categories and concerns for the filter chips |
+
+
+## 🌐 Live Demo
+
+Try the application online, no installation needed:
+
+👉 **https://skincare-recommender-2.onrender.com**
+
+> ⏳ The app is hosted on Render's free tier. If nobody has visited recently, it goes to sleep, so the first load can take about a minute. After that it runs normally.
